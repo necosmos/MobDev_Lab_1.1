@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18121" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="q09-PM-KKS">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18092"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item 2-->
+        <scene sceneID="g4v-So-1M7">
+            <objects>
+                <viewController id="b1J-cY-7qI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iac-Cx-jjN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Sj8-sb-WpI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="BcM-CG-UQ8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jjd-4x-bVj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1235" y="361"/>
+        </scene>
+        <!--Boom!-->
+        <scene sceneID="wH4-A2-4n1">
+            <objects>
+                <viewController id="RxR-8m-Zwh" customClass="ViewController" customModule="Armageddon3000" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="d4u-LF-1jK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пінчук Микита Група ІВ-82 ЗК ІВ-8219" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u6w-BP-hHu">
+                                <rect key="frame" x="148.5" y="417.5" width="117.5" height="61"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0LH-DU-5oY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="u6w-BP-hHu" firstAttribute="centerY" secondItem="d4u-LF-1jK" secondAttribute="centerY" id="DL8-T3-XG6"/>
+                            <constraint firstItem="u6w-BP-hHu" firstAttribute="centerX" secondItem="d4u-LF-1jK" secondAttribute="centerX" id="acK-32-qO7"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Boom!" image="person.fill.questionmark.ar" catalog="system" id="HSG-CF-DfA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N9g-b1-Nly" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1235" y="-246"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="aqQ-V1-elv">
+            <objects>
+                <tabBarController id="q09-PM-KKS" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="INM-0c-GHx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="RxR-8m-Zwh" kind="relationship" relationship="viewControllers" id="4Ql-n5-7Sx"/>
+                        <segue destination="b1J-cY-7qI" kind="relationship" relationship="viewControllers" id="Ggf-eH-1MR"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EuY-F2-S6S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="345" y="57"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="person.fill.questionmark.ar" catalog="system" width="128" height="104"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
